@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veille Technologique - Portfolio</title>
+    <link rel="stylesheet" href="portofolio.css">
+</head>
+
+<body>
+
+    <div class="rideau">
+        <img src="icone1.png" alt="Image du rideau" onclick="window.location.href='accueil.html'" class="rideau-button">
+        <button onclick="window.location.href='presentation.html'">Présentation</button>
+        <button onclick="window.location.href='specialite.html'">Spécialité</button>
+        <button onclick="window.location.href='cv.html'">CV</button>
+        <button onclick="window.location.href='experience.html'">Expérience PRO</button>
+        <button onclick="window.location.href='competence.html'">Feuille de compétence</button>
+        <button onclick="window.location.href='veille.html'">Veille technologique</button>
+        <button onclick="window.location.href='contact.html'">Contact</button>
+        <h3>&copy; 2024 Portfolio Tom</h3>
+    </div>
+
+    <div class="content">
+        <h1>Qu’est-ce que la veille technologique ?</h1>
+        <p>La veille technologique est un processus structuré de collecte, d’analyse et de diffusion d’informations techniques pour assurer la compétitivité des entreprises. Elle surveille les innovations pouvant affecter le marché et se déroule en trois étapes : acquisition, gestion et synthèse des données.</p>
+
+        <h2>Ma veille</h2>
+        <p>Pour ma veille, j'utilise <a href="https://www.google.com/alerts" target="_blank">Google Alerts</a> ainsi que <a href="https://feedly.com" target="_blank">Feedly</a> pour organiser ma veille technologique. Celle-ci se porte principalement sur les intelligences artificielles.</p>
+    </div>
+
+</body>
+
+</html>
+
+/* Style général pour le body */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4; /* Ajout d'une couleur de fond pour le contenu */
+}
+
+/* Style pour le rideau (menu latéral) */
+.rideau {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1f0039;
+    color: #ffffff;
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* Image en haut du rideau servant de bouton */
+.rideau img {
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+    cursor: pointer; /* Rendre cliquable */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.rideau img:hover {
+    transform: scale(1.1); /* Effet zoom */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Effet lumineux */
+}
+
+/* Style pour les boutons du menu */
+.rideau button {
+    width: 90%; /* Occupe presque toute la largeur */
+    padding: 15px;
+    margin: 10px auto;
+    background-color: #1f0039;
+    color: #ffffff;
+    border: 2px solid transparent;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.rideau button:hover {
+    background-color: #5e006e;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+/* Style pour le contenu principal */
+.content {
+    margin-left: 250px; /* Laisser de la place pour le menu */
+    padding: 20px;
+    height: 100vh;
+    overflow-y: auto; /* Permet le défilement si le contenu dépasse */
+}
+
+/* Titres et paragraphes */
+.content h1, .content h2, .content p {
+    font-family: 'Roboto', sans-serif;
+    color: #1f0039;
+}
+
+.content h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.content h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Liens (par exemple pour les mails ou formulaires) */
+a {
+    color: #1f0039;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #5e006e;
+    text-decoration: underline;
+}
+
+/* Footer */
+.rideau h3 {
+    font-size: 14px; /* Réduction de la taille */
+    margin-top: 20px;
+    color: #cccccc; /* Couleur plus discrète */
+}
